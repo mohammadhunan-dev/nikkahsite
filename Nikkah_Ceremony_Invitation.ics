@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Your Organization//Your Product//EN
+BEGIN:VEVENT
+UID:20241229T130000Z@yourdomain.com
+DTSTAMP:20241229T130000Z
+DTSTART:20241229T130000Z
+DTEND:20241229T170000Z
+SUMMARY:Mohammad Hunan and Mashiyate's Nikkah Ceremony
+LOCATION:Al Falah Center, 881 US-206, Bridgewater, NJ 08807
+DESCRIPTION:Attire: For our Nikkah ceremony at the Al Falah Mosque, women are kindly asked to wear a veil or head-covering in the prayer area, though it’s not required in the banquet hall. Men should wear pants and full-sleeved shirts. Also, please take off your shoes when entering the prayer area. Feel free to choose between Desi or American wedding attire — just please avoid wearing blue. Thank you!\n\nParking: There is plenty of parking in the Mosque parking lot.
+END:VEVENT
+END:VCALENDAR

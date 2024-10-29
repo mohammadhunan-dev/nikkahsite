@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A special message from Mohammad Hunan and Mashiyate</title>
+
   <style>
     /* Reset default margin and padding */
     * {
@@ -148,6 +149,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div style="display: none;" data-version="1.0.1"></div>
   <div class="ecard-container">
     <video id="ecardVideo" src="animated-invite.mp4" autoplay muted playsinline></video>
     <button id="loopButton" class="loop-button"><i class="fas fa-redo"></i></button>
@@ -191,14 +193,21 @@
         });
     });
 
-    // Toggle play/pause on click
-    video.addEventListener('click', () => {
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
-      }
-    });
+    // Function to add click listener for desktop only
+    function addDesktopClickListener() {
+        if (window.matchMedia("(min-width: 768px)").matches) { // Adjust min-width as needed
+            video.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        }
+    }
+
+    // Call the function to set up the listener
+    addDesktopClickListener();
 
     // Show loop button when video ends
     video.addEventListener('ended', () => {

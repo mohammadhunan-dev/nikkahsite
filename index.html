@@ -149,7 +149,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div style="display: none;" data-version="1.0.1"></div>
+  <div style="display: none;" data-version="1.0.2"></div>
   <div class="ecard-container">
     <video id="ecardVideo" src="animated-invite.mp4" autoplay muted playsinline></video>
     <button id="loopButton" class="loop-button"><i class="fas fa-redo"></i></button>
@@ -187,8 +187,13 @@
 
     document.addEventListener("DOMContentLoaded", function() {
         const footerLink = document.querySelector('.footer-link');
+        const rvspButton = document.querySelector('.rsvp-button');
 
         footerLink.addEventListener('click', function() {
+            window.open('https://withjoy.com/hunan-and-mashiyate/welcome', '_blank');
+        });
+
+        rvspButton.addEventListener('click', function() {
             window.open('https://withjoy.com/hunan-and-mashiyate/welcome', '_blank');
         });
     });
